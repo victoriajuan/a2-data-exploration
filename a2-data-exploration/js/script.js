@@ -14,6 +14,7 @@ $(function() {
     var drawHeight = height - margin.top - margin.bottom;
 
     /************************************** Create chart wrappers ***************************************/
+    
     var svg = d3.select('#viz')
                 .attr('width', width)
                 .attr('height', height);
