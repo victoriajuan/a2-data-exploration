@@ -7,8 +7,8 @@ $(function() {
         left: 60
     };
 
-    var width = 960;
-    var height = 500;
+    var width = 1150;
+    var height = 700;
     
     var drawWidth = width - margin.left - margin.right;
     var drawHeight = height - margin.top - margin.bottom;
@@ -32,7 +32,7 @@ $(function() {
         var nestedData = d3.nest()
                     .key(function(d) { return d.Race; })
                     .key(function(d) { 
-                        if(d.Year < 2017 && d.Year > 1800 && d.Year != "undefined"){
+                        if(d.Year < 2017 && d.Year > 1800 && d.Year != 'undefined'){
                             return d.Year;
                         } 
                     })
@@ -127,7 +127,7 @@ $(function() {
                 .on("mousemove", function(d){
                     tooltip
                     .style("left", d3.event.pageX - 30 + "px")
-                    .style("top", d3.event.pageY - 50 + "px")
+                    .style("top", d3.event.pageY - 70 + "px")
                     .style("display", "inline-block")
                     .html(d.key + "</br>"+ "Total Violation: " + (d.value));
                 })
