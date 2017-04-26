@@ -31,8 +31,28 @@
     </div>
 
     <div class="container">
-        <h2>Bar chart</h2>
-        <p>Question: What are the most common devices/apps used by people who connect to Airbnb (between May 2014 and April 2015)?</p>
+        <p id="question">Question: What is the trend of the traffic violation by years caused by different race?</p>
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+                    <input value="HISPANIC" type="radio" name="options" id="option1" autocomplete="off">HISPANIC
+                </label>
+            <label class="btn btn-primary">
+                    <input value="WHITE" type="radio" name="options" id="option2" autocomplete="off" >WHITE
+                </label>
+            <label class="btn btn-primary">
+                    <input value="BLACK" type="radio" name="options" id="option2" autocomplete="off" checked>BLACK
+                </label>
+             <label class="btn btn-primary">
+                    <input value="ASIAN" type="radio" name="options" id="option1" autocomplete="off">ASIAN
+                </label>
+            <label class="btn btn-primary">
+                    <input value="OTHER" type="radio" name="options" id="option2" autocomplete="off" >OTHER
+                </label>
+            <label class="btn btn-primary">
+                    <input value="NATIVE AMERICAN" type="radio" name="options" id="option2" autocomplete="off" checked>NATIVE AMERICAN
+                </label>
+        </div>
 
         <!--Create a svg with an id of viz-->
         <svg id="viz"></svg>
